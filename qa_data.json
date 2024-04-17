@@ -1,0 +1,22 @@
+[
+    {
+        "query": "hello",
+        "answer": "hi",
+        "is_function": false
+    },
+    {
+        "query": "what is the capital of france",
+        "answer": "paris",
+        "is_function": false
+    },
+    {
+        "query": "who am i",
+        "answer": "you are my creator basset",
+        "is_function": false
+    },
+    {
+        "query": "sum of two numbers",
+        "answer": "def add_numbers(num1, num2):\n    \"\"\"\n    Function to add two numbers.\n    \n    Parameters:\n    num1 (int or float): First number.\n    num2 (int or float): Second number.\n    \n    Returns:\n    int or float: Sum of num1 and num2.\n    \"\"\"\n    return num1 + num2\n\n\nspeak(\"Enter the first number: \")\nnum1 = float(input(\"Enter the first number: \"))\nspeak(\"Enter the second number: \")\nnum2 = float(input(\"Enter the second number: \"))\n\nresult = add_numbers(num1, num2)\nprint(\"The sum of\", num1, \"and\", num2, \"is:\", result)\nspeak(\"The sum of\"+ str(num1)+ \"and\"+ str(num2)+ \"is:\"+ str(result))\n\n\n\n",
+        "is_function": true
+    }
+]
